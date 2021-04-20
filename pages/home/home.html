@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps that are
+    going to primarily use a Tabbed UI.
+  </p>
+
+  <ion-item>
+    <ion-label>Height: {{feet}} feet</ion-label>
+    <ion-range
+      min="1"
+      max="9"
+      step="1"
+      snaps="true"
+      pin="true"
+      color="secondary"
+      [(ngModel)]="feet"
+    ></ion-range>
+  </ion-item>
+
+  <ion-radio checked="true" class="input-hidden" value="male"></ion-radio>
+  <ion-label></ion-label>
+  <ion-radio value="female"></ion-radio>
+</ion-content>
